@@ -4,8 +4,8 @@ from sqlalchemy import Column, BigInteger, VARCHAR, DateTime, Integer
 Base = declarative_base()
 
 
-class Employee(Base):
-    __tablename__ = "Employee"
+class DeviceData(Base):
+    __tablename__ = "DeviceData"
     id = Column(BigInteger().with_variant(Integer, "sqlite"), primary_key=True)
     timestamp = Column(DateTime, nullable=False)
     tagname = Column(VARCHAR, nullable=False)

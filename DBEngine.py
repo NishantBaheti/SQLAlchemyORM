@@ -5,7 +5,7 @@ from Config import DATABASE_PATH, APP_NAME
 
 
 # SQLITE
-engine = create_engine(f"sqlite:///{DATABASE_PATH}", echo=True)
+engine = create_engine(f"sqlite:///{DATABASE_PATH}", echo=False)
 SqliteBase.metadata.create_all(engine)
 
 
